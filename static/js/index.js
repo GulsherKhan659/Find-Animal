@@ -90,7 +90,6 @@ let maxAnimal = Animals.length
 let currentIndex = 3
 
 let stop = false
-let isGoForward = true
 
 function goNext(i) {
 
@@ -103,9 +102,6 @@ function goNext(i) {
 
         i++;
         if (i < maxAnimal) {
-            console.warn('going to next')
-            console.log(i)
-            isGoForward = true
             goNext(i);
         } else {
             // debugger;
@@ -128,9 +124,6 @@ function goBack(i) {
 
         i--;
         if (i > -1) {
-            console.warn('going to back')
-            console.log(i)
-            isGoForward = false;
 
             goBack(i);
         } else {
@@ -143,11 +136,7 @@ function goBack(i) {
 
 function goBack_goForward(i) {
 
-    if (isGoForward) {
-        goNext(i)
-    } else {
-        goBack(i)
-    }
+    goNext(i)
 
 }
 
@@ -186,8 +175,7 @@ $(function () {
 
         event.preventDefault()
         stop = false
-        if (isGoForward) { goBack_goForward(currentIndex + 1) } else goBack_goForward(currentIndex - 1)
-
+        goBack_goForward(currentIndex)
 
 
     })
