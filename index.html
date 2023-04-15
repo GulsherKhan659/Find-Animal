@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weight Scale</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+
+    <link rel="stylesheet" href="./static/css/swiper-slider.css" />
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="image-container">
+            <img id="result-image" src="" />
+        </div>
+
+        <button class="btn" id="reset"> Reset </button>
+    </div>
+
+    <div id="carousel">
+        <div class="hideLeft">
+            <img id="img0" src="./static/images/cat.jpg">
+        </div>
+
+        <div class="prevLeftSecond">
+            <img id="img1" src="./static/images/dog.jpg">
+        </div>
+
+        <div class="prev">
+            <img id="img2" src="./static/images/bear.jpg">
+        </div>
+
+        <div class="selected">
+            <img id="img3" src="./static/images/lion.jpg">
+        </div>
+
+        <div class="next">
+            <img id="img4" src="./static/images/panda.jpg">
+        </div>
+
+        <div class="nextRightSecond">
+            <img id="img5" src="./static/images/tiger.jpg">
+        </div>
+
+        <div class="hideRight">
+            <img id="img6" src="./static/images/koala.jpg">
+        </div>
+        <!-- <div class="hideRight">
+            <img id="img9" src="./static/images/horse.jpg">
+        </div> -->
+
+    </div>
+
+    <div class="buttons">
+        <input type="text" id="weight" class="btn" placeholder="Enter Animal Weight.." size="50%"
+            onkeypress="return inputNumber(event)" />
+
+        <button class="btn" id="enter"> Enter </button>
+
+
+    </div>
+
+
+    <script src="./static/js/jquery.js"></script>
+    <script src="./static/js/swiper-slider.js"></script>
+
+    <script src="./static/js/index.js"></script>
+
+</body>
+
+
+
+</html>
